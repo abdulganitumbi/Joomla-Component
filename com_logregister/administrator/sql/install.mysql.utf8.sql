@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `unwyi_activities_activities` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `application` varchar(10) NOT NULL DEFAULT '',
+  `type` varchar(3) NOT NULL DEFAULT '',
+  `package` varchar(50) NOT NULL DEFAULT '',
+  `name` varchar(50) NOT NULL DEFAULT '',
+  `action` varchar(50) NOT NULL DEFAULT '',
+  `row` varchar(2048) NOT NULL DEFAULT '',
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `status` varchar(100) NOT NULL,
+  `created_on` text NOT NULL,
+  `date` text NOT NULL,
+  `created_by` int(11) NOT NULL DEFAULT '0',
+  `ip` varchar(45) NOT NULL DEFAULT '',
+  `metadata` text NOT NULL,
+  `emailcontent` text,
+  `note` text NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `package` (`package`),
+  KEY `name` (`name`),
+  KEY `row` (`row`(333)),
+  KEY `ip` (`ip`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;

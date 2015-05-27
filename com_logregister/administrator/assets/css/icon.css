@@ -1,0 +1,28 @@
+div .activity [class*="icon-"]
+{
+	background-image: url("../images/glyphicons-halflings.png");
+	margin-top: 1px;
+    vertical-align: text-top;
+    opacity: 0.5;
+}
+.icon-off
+{
+
+  background-position: -384px 0;
+}
+.icon-plus-sign
+{
+  background-position: 0 -96px;
+}
+.icon-trash
+{
+  background-position: -456px 0;
+}
+.icon-update
+{
+  background-position: -96px -72px;
+}
+.icon-user
+{
+  background-position: -168px 0;
+}
